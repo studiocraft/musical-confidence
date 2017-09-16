@@ -1,0 +1,54 @@
+title: Nick Dean
+keywords: [Music, Guitar]
+
+company:
+  name: Nick Dean Music
+  owner: Nick Dean
+  address:
+    street:
+    suite-floor:
+    city:
+    state-province:
+    country:
+    postal-code:
+  tagline:
+
+
+port: 4000
+url: http://nick-dean.studiocraft.cc
+baseurl:
+
+permalink: pretty
+
+timezone: UTC
+collections:
+  lessons:
+    title: Lessons
+    output: true
+  music:
+    title: Music
+    output: true
+  posts:
+    title: Posts
+    output: true
+  tutorials:
+    title: Tutorials
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
+
+exclude: [package.json, bower.json, Gruntfile.js, gulpfile.js, node_modules, bower_components, /**/styles, /**/scripts, .bowerrc, .sass-cache, .DS_Store, .gitignore, .editorconfig, .jshintrc, /*.yml, /*.txt, /*.md, /*.psd, /*.ai, /*.pdf, /*.indd, /*.idlk]

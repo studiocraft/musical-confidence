@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {% include meta/meta.html %}
+  {% include meta/css/css.html %}
+  {% include meta/js/js.html %}
+  </head>
+  <body class="{{ page.title | slugify }} sans-serif near-black">
+    {% include components/loader-overlay.html %}
+    {% include components/global-navigation.html %}
+    <main id="content">
+      {% if page.layout == 'default' %}
+      {% include components/home-banner.html %}
+      {% endif %}
+      {{ content }}
+    </main>
+    {% include components/global-footer.html %}
+  </body>
+</html>

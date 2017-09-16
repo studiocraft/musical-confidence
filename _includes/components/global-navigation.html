@@ -1,0 +1,19 @@
+<header id="globalNavigation" class="w-100 bg-white">
+  <nav id="navigationMenu" class="pa4">
+    <ul class="list pa0 lh-copy">
+      <li class="dib mr2">
+        <a class="link tracked-tight b ttu no-underline near-black hover-blue" href="{{ site.url }}">Home</a>
+      </li>
+      {% assign pages = site.pages | sort:'position'  %}
+      {% for page in pages %}
+      {% if page.layout == 'page' %}
+      {% unless page.sitemap.exclude == true %}
+      <li class="dib mr2">
+        <a class="link tracked-tight b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>{{ page.title }}</a>
+      </li>
+      {% endunless %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

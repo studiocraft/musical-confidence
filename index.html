@@ -1,0 +1,25 @@
+---
+title: Home
+layout: default
+intro: Nick Dean is a professional musician, and teacher based in Philadelphia, PA.
+---
+
+<section class="ma4 wow animated fadeInDown">
+  <h1 class="f1 f-subheadline-ns measure lh-title tracked-tight">{{ page.intro }}</h1>
+</section>
+<section class="dt-ns w-100 bg-near-white wow animated fadeInUp" id="contact">
+  <div class="db dtc-ns w-100 w-50-ns ph4 pv6">
+    <h2 class="f2 lh-title tracked-tight">Location</h2>
+    <address class="fs-normal">
+      <label class="db b ttu light-silver mv1">{{ site.title }}</label>
+      <ul class="list pa0 mv0 lh-copy">
+        <li><a class="link underline near-black hover-blue" href="mailto:email@domain.com"><small><abbr title="Email" aria-hidden="true"><i class="fa fa-fw fa-envelope"></i></abbr>email@domain.com</a></small></li>
+        <li><a class="link underline near-black hover-blue" href="tel:13472211926"><small><abbr title="Phone"><i class="fa fa-fw fa-phone" aria-hidden="true"></i></abbr>(123) 456-7890</a></small></li>
+        <li><a class="link underline near-black hover-blue" href="https://goo.gl/maps/ePAZK239wrC2" target="_blank"><small><abbr title="Location"><i class="fa fa-fw fa-globe" aria-hidden="true"></i></abbr>Philadelphia, NY</a></small></li>
+      </ul>
+    </address>
+  </div>
+  <div class="dn dtc-ns w-100 w-50-ns relative">
+    <div id="map" class="absolute absolute--fill wow animated fadeIn" style="background-color:transparent"></div>
+  </div>
+</section>
