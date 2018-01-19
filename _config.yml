@@ -1,8 +1,9 @@
-title: Nick Dean
-keywords: [Music, Guitar]
+timezone: UTC
+title: Musicical Confidence
+keywords: [Music, Rhythm, Audio, Sound, Guitar, Piano, Percussion, Instruments, Composition, Production]
 
 company:
-  name: Nick Dean Music
+  name: Musical Confidence
   owner: Nick Dean
   address:
     street:
@@ -15,12 +16,10 @@ company:
 
 
 port: 4000
-url: http://nick-dean.studiocraft.cc
+url: http://musicalconfidence.studiocraft.cc
 baseurl:
-
 permalink: pretty
 
-timezone: UTC
 collections:
   lessons:
     title: Lessons
@@ -49,6 +48,10 @@ defaults:
     type: pages
   values:
     layout: page
-permalink: pretty
+- scope:
+    path: ''
+    type: music
+  values:
+    layout: post
 
 exclude: [package.json, bower.json, Gruntfile.js, gulpfile.js, node_modules, bower_components, /**/styles, /**/scripts, .bowerrc, .sass-cache, .DS_Store, .gitignore, .editorconfig, .jshintrc, /*.yml, /*.txt, /*.md, /*.psd, /*.ai, /*.pdf, /*.indd, /*.idlk]

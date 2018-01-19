@@ -5,30 +5,31 @@ layout: page
 {% assign title = page.title %}
 
 <section class="ma4">
-  <label class="b ttu light-silver">Last updated: <time>{{ site.time | date: "%B %d, %Y" }}</time></label>
-  <h2 class="f2 lh-title tracked-tight">Overview</h2>
-  <p class="measure-narrow lh-copy">{{ page.overview }}</p>
+  <article>
+    <label class="b ttu light-silver">Last updated: <time>{{ site.time | date: "%B %d, %Y" }}</time></label>
+    <header class="f2 lh-title ">Overview</header>
+    <p class="measure-narrow lh-copy">{{ page.overview }}</p>
 
-  {% case title %}
+    {% case title %}
 
-  {% when 'Terms of Use' %}
-  {% if page.termination %}
-  <h2 class="f2 lh-title tracked-tight">Termination</h2>
-  <p class="measure-narrow">{{ page.termination }}</p>
-  {% endif %}
+    {% when 'Terms of Use' %}
+    {% if page.termination %}
+    <header class="f2 lh-title ">Termination</header>
+    <p class="measure-narrow">{{ page.termination }}</p>
+    {% endif %}
 
-  {% when 'Privacy Policy' %}
-  {% if page.information-collection-and-use %}
-  <h2 class="f2 lh-title tracked-tight">Information Collection And Use</h2>
-  <p class="measure-narrow lh-copy">{{ page.information-collection-and-use }}</p>
-  {% endif %}
-  {% if page.log-data %}
-  <h2 class="f2 lh-title tracked-tight">Log Data</h2>
-  <p class="measure-narrow lh-copy">{{ page.log-data }}</p>
-  {% endif %}
+    {% when 'Privacy Policy' %}
+    {% if page.information-collection-and-use %}
+    <header class="f2 lh-title ">Information Collection And Use</header>
+    <p class="measure-narrow lh-copy">{{ page.information-collection-and-use }}</p>
+    {% endif %}
+    {% if page.log-data %}
+    <header class="f2 lh-title ">Log Data</header>
+    <p class="measure-narrow lh-copy">{{ page.log-data }}</p>
+    {% endif %}
 
-  {% endcase %}
+    {% endcase %}
 
-  <p class="measure lh-copy ttu">{{ page.notice | capitalize }}</p>
-  </center>
+    <p class="measure lh-copy ttu">{{ page.notice | capitalize }}</p>
+  </article>
 </section>

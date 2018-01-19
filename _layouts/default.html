@@ -5,12 +5,14 @@
   {% include meta/css/css.html %}
   {% include meta/js/js.html %}
   </head>
-  <body class="{{ page.title | slugify }} sans-serif near-black">
+  <body class="{{ page.title | slugify }} system-serif near-black">
     {% include components/loader-overlay.html %}
     {% include components/global-navigation.html %}
     <main id="content">
       {% if page.layout == 'default' %}
       {% include components/home-banner.html %}
+      {% else %}
+      {% include components/page-header.html %}
       {% endif %}
       {{ content }}
     </main>
