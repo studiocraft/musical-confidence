@@ -1,7 +1,7 @@
 timezone: UTC
 title: Musicical Confidence
 
-company:
+Company:
   name: Musical Confidence LLC
   owner: Nick Dean
   address:
@@ -12,7 +12,7 @@ company:
     country:
     postal-code:
 
-brand:
+Brand:
   logo:
   tagline:
   keywords: [Music, Rhythm, Audio, Sound, Guitar, Piano, Percussion, Instruments, Composition, Production]
