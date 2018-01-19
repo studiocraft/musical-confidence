@@ -1,4 +1,6 @@
 <footer class="pa4">
+  <p class="db mv2 lh-copy">Made with <i class="fa fa-heart"></i> in Philadelphia, PA.</p>
+  <small class="db mv2 lh-copy">Copyright<i class="fa fa-fw fa-copyright"></i>{{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</small>
   <ul class="list pa0 lh-copy">
     {% assign pages = site.pages | sort:'position'  %}
     {% for page in pages %}
@@ -9,7 +11,6 @@
     {% endif %}
     {% endfor %}
   </ul>
-  <small class="db mv2 lh-copy">Copyright<i class="fa fa-fw fa-copyright"></i>{{ site.time | date: "%Y" }} {{ site.title }} Music. All rights reserved.</small>
-  <small class="db mv2 lh-copy">Made with <i class="fa fa-heart"></i> in Philadelphia, PA.</small>
+
   <a class="db link underline-hover gray" href="#content" data-scroll><small>Back to Top</small></a>
 </footer>

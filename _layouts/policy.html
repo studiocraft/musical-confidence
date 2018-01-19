@@ -3,33 +3,40 @@ layout: page
 ---
 
 {% assign title = page.title %}
-
-<section class="ma4">
+<section class="pa4">
   <article>
-    <label class="b ttu light-silver">Last updated: <time>{{ site.time | date: "%B %d, %Y" }}</time></label>
-    <header class="f2 lh-title ">Overview</header>
-    <p class="measure-narrow lh-copy">{{ page.overview }}</p>
+    <header class="wow animated fadeInDown">
+      <label class="db tracked mv1 light-silver b ttu wow animated fadeInUp"><small>Last updated: <time>{{ site.time | date: "%B %d, %Y" }}</time></small></label>
+      <h1 class="f2 f1-ns lh-title tracked-tight">Overview</h1>
+    </header>
+    <p class="measure lh-copy wow animated fadeIn">{{ page.overview }}</p>
 
     {% case title %}
 
     {% when 'Terms of Use' %}
     {% if page.termination %}
-    <header class="f2 lh-title ">Termination</header>
-    <p class="measure-narrow">{{ page.termination }}</p>
+      <h2 class="f3 f2-ns lh-title tracked-tight wow animated fadeInDown">Termination</h2>
+      <p class="lh-copy measure-wide wow animated fadeIn">{{ page.termination }}</p>
     {% endif %}
 
     {% when 'Privacy Policy' %}
     {% if page.information-collection-and-use %}
-    <header class="f2 lh-title ">Information Collection And Use</header>
-    <p class="measure-narrow lh-copy">{{ page.information-collection-and-use }}</p>
+    <h2 class="f3 f2-ns lh-title tracked-tight wow animated fadeInDown">Information Collection And Use</h2>
+    <p class="lh-copy measure-wide wow animated fadeIn">{{ page.information-collection-and-use }}</p>
     {% endif %}
     {% if page.log-data %}
-    <header class="f2 lh-title ">Log Data</header>
-    <p class="measure-narrow lh-copy">{{ page.log-data }}</p>
+    <h2 class="f3 f2-ns lh-title tracked-tight wow animated fadeInDown">Log Data</h2>
+    <p class="lh-copy measure-wide wow animated fadeIn">{{ page.ilog-data }}</p>
+    {% endif %}
+
+    {% when 'MIT License' %}
+    {% if page.information-collection-and-use %}
+    <h2 class="f3 f2-ns lh-title tracked-tight wow animated fadeInDown">Information Collection And Use</h2>
+    <p class="lh-copy measure-wide wow animated fadeIn">{{ page.information-collection-and-use }}</p>
     {% endif %}
 
     {% endcase %}
 
-    <p class="measure lh-copy ttu">{{ page.notice | capitalize }}</p>
+    <p class="lh-copy measure-wide ttu wow animated fadeIn">{{ page.notice }}</p>
   </article>
 </section>
