@@ -2,7 +2,9 @@
   <nav id="navigationMenu" class="pv2 ph4">
     <ul class="list pa0 lh-copy">
       <li class="dib mr2">
-        <a class="link  b ttu no-underline near-black hover-blue" href="{{ site.url }}">Home</a>
+        <a class="link b ttu no-underline near-black hover-blue" href="{{ site.url }}">
+          <i class="fa fa-music fa-lg"></i>
+        </a>
       </li>
       {% assign pages = site.pages | sort:'position'  %}
 
@@ -11,7 +13,7 @@
       {% if page.layout == 'page' %}
       {% unless page.sitemap.exclude == true %}
       <li class="dib mr2">
-        <a class="link  b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>{{ page.title }}</a>
+        <a class="link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>{{ page.title }}</a>
       </li>
       {% endunless %}
       {% endif %}

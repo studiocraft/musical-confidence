@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
+{% include components/page-header.html %}
 
 <section class="pa4">
-  <p class="measure f2">{{ page.intro }}</p>
+  <p class="measure f2">{{ page.introduction }}</p>
+  {{ content }}
 </section>
-{{ content }}

@@ -9,12 +9,13 @@
     {% include components/loader-overlay.html %}
     {% include components/global-navigation.html %}
     <main id="content">
+
       {% if page.layout == 'default' %}
       {% include components/home-banner.html %}
-      {% else %}
-      {% include components/page-header.html %}
       {% endif %}
+
       {{ content }}
+
     </main>
     {% include components/global-footer.html %}
   </body>
