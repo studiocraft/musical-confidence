@@ -1,8 +1,7 @@
 ---
 title: Home
 layout: default
-intro: Musical Confidence is an audio & music production studio based in Philadelphia,
-  PA.
+intro: Musical Confidence is an audio & music production studio based in Philadelphia, PA.
 overview: Our content is specially designed to spark and foster your musical confidence
   and creative spirit.
 ---
@@ -19,12 +18,12 @@ overview: Our content is specially designed to spark and foster your musical con
 
   <p class="f2 measure-narrow lh-copy">{{ page.overview }}</p>
 
-  <!-- <center class="mv4 dt tl w-100">
+  <center class="mv4 dt tl w-100">
 
     {% for collection in site.collections %}
 
     {% if collection.label == 'lessons' %}
-    <figure class="dt-row dtc-ns w-100 w-third-l pv4 pr4-l">
+    <figure class="dt-row dtc-l w-100 w-third-l pv4 pr4-l">
       <label class="ttu b lh-copy light-silver"><small>{{ collection.label }}</small></label>
       {% for upcoming in collection.docs limit:'3' %}
       <header class="f6 normal lh-copy ttc">{{ upcoming.title }}</header>
@@ -46,7 +45,7 @@ overview: Our content is specially designed to spark and foster your musical con
     {% endif %}
 
     {% if collection.label == 'music' %}
-    <figure class="dt-row dtc-ns w-100 w-third-l pv4 pr4-l">
+    <figure class="dt-row dtc-l w-100 w-third-l pv4 pr4-l">
       <label class="ttu b lh-copy light-silver"><small>{{ collection.label }}</small></label>
       {% for featured in collection.docs %}
       <article>
@@ -80,7 +79,7 @@ overview: Our content is specially designed to spark and foster your musical con
     {% endif %}
 
     {% if collection.label == 'tutorials' %}
-    <figure class="dt-row dtc-ns w-100 w-third-l pv4 pr4-l">
+    <figure class="dt-row dtc-l w-100 w-third-l pv4 pr4-l">
       <label class="ttu b lh-copy light-silver"><small>{{ collection.label }}</small></label>
       {% for featured in collection.docs %}
       <article class="">
@@ -94,7 +93,7 @@ overview: Our content is specially designed to spark and foster your musical con
 
     {% endfor %}
 
-  </center> -->
+  </center>
 
   <center class="mv4 dt tl w-100">
     <figure class="dt-row w-100">
