@@ -2,10 +2,10 @@
 title: About
 position: 0
 layout: page
-introduction: Musical Confidence breaks down the complicated process of music-making
+Introduction: Musical Confidence breaks down the complicated process of music-making
   into a simple goal-system that teaches and demonstrates the basic elements of audio
   & music.
-body: 
+Body:
 ---
 
 At musicalconfidence.com we break down the complicated process of music-making into a simple goal-system that teaches and demonstrates the basic elements of sound and music. Any effective learning system must be flexible and responsive to students needs, and for this reason we ask that any student interested in lessons please email us at nicholasdean@musicalconfidence.com with a brief or detailed explanation of what musical goals you would like help tackling. We will carefully review the information you send and we will design a goal-system for you to follow through to success. Curriculum will necessarily entail mastery over elemental musical concepts, and from there instruction is based on individual student preferences. Developing unique musical personalities full of passion, insight, and confidence so that you are equipped with tools enabling you to relax, have fun, and freely express yourself is what we’re all about. True confidence is leaning back on your strengths while stretching yourself towards new horizons of inspiration.
