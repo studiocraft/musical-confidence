@@ -1,24 +1,22 @@
-<header id="globalNavigation" class="w-100 bg-white flex fixed z-max">
-  <nav id="navigationMenu" class="pv2 ph4">
-    <ul class="list pa0 lh-copy">
-      <li class="dib mr2">
-        <a class="link b ttu no-underline near-black hover-blue" href="{{ site.url }}">
-          <i class="fa fa-music fa-lg"></i>
-        </a>
-      </li>
-      {% assign pages = site.pages | sort:'position'  %}
+<div id="globalNavigation" class="w-100 pv2 ph4 fixed flex flex-wrap justify-between items-baseline z-max bg-white">
 
-      {% for page in pages %}
+  <header class="f3">
+    <a class="link b ttu no-underline near-black hover-blue" href="{{ site.url }}">
+      {{ site.title }}
+    </a>
+  </header>
 
-      {% if page.layout == 'page' %}
-      {% unless page.sitemap.exclude == true %}
-      <li class="dib mr2">
-        <a class="link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>{{ page.title }}</a>
-      </li>
-      {% endunless %}
-      {% endif %}
+  <nav id="navigationMenu">
+    {% assign pages = site.pages | sort:'position'  %}
+    {% for page in pages %}
 
-      {% endfor %}
-    </ul>
+    {% if page.layout == 'page' %}
+    {% unless page.sitemap.exclude == true %}
+    <a class="link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>{{ page.title }}</a>
+    {% endunless %}
+    {% endif %}
+
+    {% endfor %}
   </nav>
-</header>
+
+</div>
