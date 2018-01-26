@@ -34,25 +34,24 @@
         }
 
 
-        function navigationMenu() {
+        function globalNavigation () {
+          var menuToggle = document.getElementById("globalNavigation-menuToggle");
+          var menu = document.getElementById("globalNavigation-menu");
 
-          var navButton = document.getElementById("nav-menu-button"),
-              navUl = document.getElementsByClassName("nav-ul");
-
-          function toggleMobileMenu() {
-            navUl[0].style.transition = "max-height 0.5s";
-            navUl[0].classList.toggle("hide-ul");
+          function toggleMenu() {
+            menu.classList.toggle("active");
           }
-
-          navButton.onclick = toggleMobileMenu;
+          menuToggle.onclick = toggleMenu;
         }
+
 
         function scroller() {
           var targets = document.querySelectorAll('[data-scroll]');
           for (i = 0; i < targets.length; ++i) {
-            targets[i].addEventListener("click", smoothScroll, false);
+            targets[i].addEventListener("onClick", smoothScroll, false);
           }
         }
+
 
         window.onload = function(event) {
           event.preventDefault();
@@ -66,7 +65,8 @@
               windowElement.removeClass('overflow-hidden');
               bodyElement.addClass('animated fadeInBig');
               scroller();
-            }, 1500);
+              globalNavigation();
+            }, 70);
           }
         };
 

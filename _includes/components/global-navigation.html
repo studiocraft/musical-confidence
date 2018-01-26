@@ -1,18 +1,22 @@
-<div id="globalNavigation" class="w-100 pv2 ph4 fixed flex flex-wrap justify-between items-baseline z-max bg-white">
+<div id="globalNavigation" class="w-100 pv2 ph4 fixed flex flex-wrap justify-between items-baseline z-9999 bg-white">
 
-  <header class="">
-    <a class="link b ttu no-underline near-black hover-blue" href="{{ site.url }}">
+  <header class="w-100 w-100-m w-auto-l flex justify-between items-baseline">
+    <a class="db link b ttu no-underline near-black hover-blue" href="{{ site.url }}">
       {{ site.title }}
     </a>
+    <button type="button" id="globalNavigation-menuToggle" class="pointer db db-m dn-l bn link hover-blue">
+      <i class="fa fa-fw fa-bars" aria-hidden="true"></i>
+      <small>Menu</small>
+    </button>
   </header>
 
-  <nav id="navigationMenu" class="">
+  <nav id="globalNavigation-menu" class="dn dn-m db-l vh-100">
     {% assign pages = site.pages | sort:'position'  %}
     {% for page in pages %}
 
     {% if page.layout == 'page' %}
       {% unless page.sitemap.exclude == true %}
-      <a class="link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>
+      <a class="db dib-l w-100 w-100-m w-auto-l mt2 mt0-l ml2-l link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>
         {{ page.title }}
       </a>
       {% endunless %}
