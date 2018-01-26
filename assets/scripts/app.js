@@ -33,6 +33,20 @@
           }
         }
 
+
+        function navigationMenu() {
+
+          var navButton = document.getElementById("nav-menu-button"),
+              navUl = document.getElementsByClassName("nav-ul");
+
+          function toggleMobileMenu() {
+            navUl[0].style.transition = "max-height 0.5s";
+            navUl[0].classList.toggle("hide-ul");
+          }
+
+          navButton.onclick = toggleMobileMenu;
+        }
+
         function scroller() {
           var targets = document.querySelectorAll('[data-scroll]');
           for (i = 0; i < targets.length; ++i) {
@@ -96,7 +110,7 @@
 
           var myLatLng = { lat: 40.0507607, lng: -75.2052365};
 
-          var styledMap = new google.maps.StyledMapType(styles, {name: "Nick Dean"});
+          var styledMap = new google.maps.StyledMapType(styles, {name: "Musical Confidence"});
 
           var mapOptions = {
             center: myLatLng,

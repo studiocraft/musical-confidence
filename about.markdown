@@ -2,7 +2,8 @@
 title: About
 position: 0
 layout: page
-Introduction: Musical Confidence breaks down the complicated process of music-making
+
+Intro: Musical Confidence breaks down the complicated process of music-making
   into a simple goal-system that teaches and demonstrates the basic elements of audio
   & music.
 Body:

@@ -1,19 +1,21 @@
 <div id="globalNavigation" class="w-100 pv2 ph4 fixed flex flex-wrap justify-between items-baseline z-max bg-white">
 
-  <header class="f3">
+  <header class="">
     <a class="link b ttu no-underline near-black hover-blue" href="{{ site.url }}">
       {{ site.title }}
     </a>
   </header>
 
-  <nav id="navigationMenu" class="w-100 w-50-l flex flew-wrap justify-between items-baseline">
+  <nav id="navigationMenu" class="">
     {% assign pages = site.pages | sort:'position'  %}
     {% for page in pages %}
 
     {% if page.layout == 'page' %}
-    {% unless page.sitemap.exclude == true %}
-    <a class="link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>{{ page.title }}</a>
-    {% endunless %}
+      {% unless page.sitemap.exclude == true %}
+      <a class="link b ttu no-underline near-black hover-blue" href="{{ page.url }}" data-scroll>
+        {{ page.title }}
+      </a>
+      {% endunless %}
     {% endif %}
 
     {% endfor %}
