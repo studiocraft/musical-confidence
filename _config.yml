@@ -1,18 +1,21 @@
 timezone: UTC
 title: Musical Confidence
 
-Company:
-  name: Musical Confidence LLC
+contact:
+  name: Musical Confidence
   owner: Nick Dean
-  address:
-    street:
-    suite-floor:
-    city:
-    state-province:
-    country:
-    postal-code:
+  email: nicholasdean@musicalconfidence.com
+  telephone: (610) 574-8887
+ 
+ address:
+  street:
+  suite-floor:
+  city: Philadelphia
+  state: PA
+  country:
+  postal-code:
 
-Brand:
+brand:
   logo:
   tagline:
   keywords: [Music, Rhythm, Audio, Sound, Guitar, Piano, Percussion, Instruments, Composition, Production]
