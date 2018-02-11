@@ -12,7 +12,7 @@ overview: Our content is specially designed to spark and foster your musical con
 </section>
 
 <figure class="ma0 pa0 wow animated fadeIn">
-  <img class="db w-100" src="https://source.unsplash.com/collection/1723720/1600x640" alt="">
+  <img class="db w-100" src="https://source.unsplash.com/random/1600x640" alt="">
 </figure>
 
 <section class="w-100 pa4 bg-white">
@@ -132,9 +132,9 @@ overview: Our content is specially designed to spark and foster your musical con
     <address class="fs-normal">
       <label class="mv2 ttu b lh-copy light-silver"><small>{{ site.title }}</small></label>
       <ul class="list pa0 mv0 lh-copy">
-        <li><a class="link underline near-black hover-blue" href="mailto:nicholasdean@musicalconfidence.com"><small><abbr title="Email" aria-hidden="true"><i class="fa fa-fw fa-envelope"></i></abbr>nicholasdean@musicalconfidence.com</a></small></li>
-        <li><a class="link underline near-black hover-blue" href="tel:13472211926"><small><abbr title="Phone"><i class="fa fa-fw fa-phone" aria-hidden="true"></i></abbr>(123) 456-7890</a></small></li>
-        <li><a class="link underline near-black hover-blue" href="https://goo.gl/maps/ePAZK239wrC2" target="_blank"><small><abbr title="Location"><i class="fa fa-fw fa-globe" aria-hidden="true"></i></abbr>Philadelphia, NY</a></small></li>
+        <li><a class="link underline near-black hover-blue" href="mailto:nicholasdean@musicalconfidence.com"><small><abbr title="Email" aria-hidden="true"><i class="fa fa-fw fa-envelope"></i></abbr>{{ site.contact.email }}</a></small></li>
+        <li><a class="link underline near-black hover-blue" href="tel:{{ site.contact.telephone }}"><small><abbr title="Phone"><i class="fa fa-fw fa-phone" aria-hidden="true"></i></abbr>{{ site.contact.telephone }}</a></small></li>
+        <li><a class="link underline near-black hover-blue" href="https://goo.gl/maps/ePAZK239wrC2" target="_blank"><small><abbr title="Location"><i class="fa fa-fw fa-globe" aria-hidden="true"></i></abbr>{{ site.address.city }}, {{ site.address.state }}</a></small></li>
       </ul>
     </address>
   </div>
